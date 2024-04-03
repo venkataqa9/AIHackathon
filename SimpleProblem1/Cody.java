@@ -18,6 +18,7 @@ class User {
   public String name;
   public int age;
   public Car car;
+  
   // Getters, setters, toString
 }
 
