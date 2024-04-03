@@ -1,1 +1,1 @@
-Filter out duplicate strings from array
+validate the entry to ensure it is between 3 and 20 characters and matches an email regular expression
