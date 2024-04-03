@@ -1,0 +1,3 @@
+Non Technical Prompt: Make a function to find the biggest number in this list of lists
+
+Technical Prompt: Create a function to find the largest integer value in this list of lists containing a variety of data types
