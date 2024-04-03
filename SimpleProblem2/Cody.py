@@ -1,16 +1,14 @@
-# First Option
-my_list = ["apple", "banana", "cherry", "apple", "orange", "banana"]
+import re
 
-unique_list = []
-for x in my_list:
-    if x not in unique_list:
-        unique_list.append(x)
+def validate_email(email):
+    if len(email) < 3 or len(email) > 20:
+        return False
+    if not re.match(r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$", email):
+        return False
+    return True
 
-print(unique_list)
-
-# Second Option
-my_list = ["apple", "banana", "cherry", "apple", "orange", "banana"]
-
-unique_list = list(set(my_list))
-
-print(unique_list)
+email = input("Enter email: ")
+if validate_email(email):
+    print("Valid email")
+else:
+    print("Invalid email")
